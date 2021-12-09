@@ -1,0 +1,27 @@
+.button{
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    font-size: larger;
+}
+
+.primary{
+    background-color: #FE5351;
+}
+
+.primary:hover{
+    background-color: #ee8c8a;
+}
+
+.primary:focus{
+    background-color: #961c1a;
+}
+.secondary{
+    background-color: #191919;
+    color: white;
+
+}
+.tertiary{
+    background-color: #E9E9E9;
+
+}
+
