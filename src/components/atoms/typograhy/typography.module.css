@@ -1,0 +1,11 @@
+.title{
+    font-family: 'Lato', sans-serif;
+}
+
+.underline{
+    border-bottom: 1px solid black;
+}
+
+.relative{
+    position: relative;
+}

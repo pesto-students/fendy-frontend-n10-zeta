@@ -1,0 +1,16 @@
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    width: 100px;
+}
+
+.greeting{
+    font-family: 'Lato', sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+}
