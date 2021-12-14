@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import './App.css';
 import ProductView from './components/pages/productView';
 import { getProductById } from './redux/slices/product/product.asyncThunk';
+import AddressForm from './components/organisms/addressForm';
 function App() {
   const currentProduct = useSelector(state => state.currentProduct);
   const status = useSelector(state => state.fetchStatus);
@@ -12,7 +13,8 @@ function App() {
     disptach(getProductById('prod_O3bR5XBQgGwnzd'));
   },[disptach]);
   return (
-    <ProductView status={status} product={currentProduct}/>
+    // <ProductView status={status} product={currentProduct}/>
+    <AddressForm />
 
   );
 }
