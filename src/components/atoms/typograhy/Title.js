@@ -1,12 +1,15 @@
 import { Typography } from "antd";
+import { getTitleClass } from "./helper/typography.helper";
 import styles from './typography.module.css'
 export const Title = (props) => {
-    const {text,level,...rest} = props;
-
+    const {text,level,type,...rest} = props;
+    const newClass = getTitleClass(type)
     return(
-        <Typography.Title level={level} className={styles.title} {...rest}>
-            {text}
-        </Typography.Title>
+        <div className={styles.relavtive}>
+            <Typography.Title level={level} className={newClass} {...rest}>
+                {text}
+            </Typography.Title>
+        </div>
     );
 
 }

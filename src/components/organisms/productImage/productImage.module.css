@@ -1,0 +1,17 @@
+
+.thubhnailImageContainer{
+    display: none;
+    justify-content: center;
+    margin: 5px;
+}
+
+.selectedImage{
+    margin: 5px;
+    border-radius: 2px;
+}
+
+.productImageContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}

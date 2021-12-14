@@ -1,11 +1,8 @@
-import { Typography } from 'antd';
 import './App.css';
-import { Title } from './components/atoms/typograhy';
-import Login from './components/pages/login' 
-import LoginForm from './components/organisms/loginForm'
+import ProductView from './components/pages/productView';
 function App() {
   return (
-    <Login></Login>
+    <ProductView/>
 
   );
 }
