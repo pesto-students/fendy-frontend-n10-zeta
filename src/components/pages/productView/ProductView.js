@@ -6,10 +6,12 @@ import ProductImage from '../../organisms/productImage';
 import testImage from '../../../assets/wardrobe.png';
 import ProductDetails from '../../organisms/productDetails';
 import SimilarStyles from '../../organisms/similarStyles/SimilarStyles';
+import { useSelector } from 'react-redux';
 const images = [testImage,testImage,testImage];
-const ProductView = (props) => {
-    let {name,description,assets} = props.product;
-    const status = props.status
+const ProductView = () => {
+    const currentProduct = useSelector(state => state.currentProduct);
+    const status = useSelector(state => state.fetchStatus);
+    let {name,description,assets} = currentProduct;
     return(
     <>
     <Header/>
